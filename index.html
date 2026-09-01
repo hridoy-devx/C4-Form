@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class04</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,46 +13,52 @@
     <div class="From">
         <h1>Registration Form</h1>
         <form>
-            <label for="Name">Enter Your Name</label>
-            <br>
-            <input type="name" placeholder="enter your name">
-            <br>
-            <br>
-            <label for="">Enter Your E-mail</label>
-            <br>
-            <input type="e-mail" placeholder="enter your e-mail">
-            <br>
-            <br>
-            <label for="">Your E-mail Password</label>
-            <br>
-            <input type="password" placeholder="password">
-            <br>
-            <br>
-            <label for="">Enter Your phn Namber</label>
-            <br>
-            <input type="namber" placeholder="content namber">
-            <br>
-            <br>
-            <label for="">Date Of Brith</label>
-            <br>
-            <input type="datetime-local">
-            <br>
-            <br>
-            <label for=""> Enter Your Gender</label>
-            <br>
-            <br>
-            <input type="radio" name="Gender">
-            <label for="Male">Male</label>
-            <input type="radio" name="Gender">
-            <label for="FeMale">Female</label>
-            <input type="radio" name="Gender">
-            <label for="Costom">Costom</label>
-            <br>
-            <br>
-            <input type="Reset">
-            <input type="Submit">
+            <div class="input-group">
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name" placeholder="enter your name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Enter Your E-mail</label>
+                <input type="email" id="email" placeholder="enter your e-mail">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Your E-mail Password</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Enter Your Phone Number</label>
+                <input type="tel" id="phone" placeholder="contact number">
+            </div>
+
+            <div class="input-group">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="input-group">
+                <label>Enter Your Gender</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="Gender">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="Gender">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="custom" name="Gender">
+                    <label for="custom">Custom</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
+
 </body>
 
 </html>
